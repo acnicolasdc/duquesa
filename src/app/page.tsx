@@ -145,7 +145,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full" id="testimoni">
+          <div className="flex flex-col w-full mb-12" id="testimoni">
             <div className="relative w-full mt-6">
               <div>
                 <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-slate-100">
