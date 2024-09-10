@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <div className="w-full mx-auto h-[350px] md:h-[400px]" id="about">
+      <div className="w-full mx-auto h-[320px] md:h-[400px]" id="about">
         <div
           className="w-full h-full"
           style={{
@@ -82,7 +82,6 @@ export default function Home() {
                 Selecciona tu plan favorito
               </div>
               <div
-
                 className="leading-normal w-full sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
               >
                 Todos nuestros planes incluyen el valor del SERVICIO y una
