@@ -23,9 +23,12 @@ export default function Home() {
       `${message} ${option}`
     )}`;
 
+  const instagramLink = `https://www.instagram.com/duquesarestaurante?igsh=MXE5bTA5Z2dncXZqcg==`;
+
+
   return (
     <main className="flex min-h-screen flex-col relative">
-            <header
+      <header
         className={
           "fixed top-0 w-full  z-30 bg-white transition-all " +
           (scrollActive ? " shadow-md pt-0 bg-white " : " pt-0")
@@ -37,11 +40,11 @@ export default function Home() {
             <Image src={logo.src} width={154} height={54} alt="Free Plan" />
           </div>
           <div className="flex flex-1 items-center justify-end">
-            
+
           </div>
         </nav>
       </header>
-      <div className="w-full mx-auto h-[400px] md:h-[500px]" id="about">
+      <div className="w-full mx-auto h-[350px] md:h-[400px]" id="about">
         <div
           className="w-full h-full"
           style={{
@@ -74,7 +77,7 @@ export default function Home() {
             <div>
               <div
 
-                className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 md:leading-relaxed"
+                className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black-600 md:leading-relaxed"
               >
                 Selecciona tu plan favorito
               </div>
@@ -143,19 +146,26 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full md:my-16" id="testimoni">
-            <div className="relative w-full mt-16">
+          <div className="flex flex-col w-full" id="testimoni">
+            <div className="relative w-full mt-6">
               <div>
                 <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-slate-100">
                   <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-                    <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+                    <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl font-medium mb-4">
                       Conoce más sobre nosotros en Instagram
                     </h5>
                     <p>
                       Siguenos para que estes al tanto de cada nueva experiencia
                     </p>
                   </div>
-                  <Button>Ver instagram</Button>
+                  <a
+                    href={instagramLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-[#dd918f] hover:bg-[#dd918f] hover:text-white-500">Ver instagram</Button>
+
+                  </a>
                 </div>
                 <div
                   className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
@@ -166,11 +176,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white-300 pt-44 pb-24 w-full flex justify-center items-center">
-      <p className="text-gray-400">
-        ©{new Date().getFullYear()} - Duquesa Restaurante
-      </p>
-    </div>
+      <div className="bg-white-300 pt-44 pb-24 w-full flex justify-center items-center mt-12">
+        <p className="text-gray-400">
+          ©{new Date().getFullYear()} - Duquesa Restaurante
+        </p>
+      </div>
     </main>
   );
 }
