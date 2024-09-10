@@ -61,7 +61,6 @@ export default function Home() {
                 Te invitamos a hacer de esta celebracion un momento memorable con
                 tu persona favorita.
               </p>
-              <Button>Reservar</Button>
             </div>
           </div>
         </div>
@@ -87,7 +86,7 @@ export default function Home() {
                 decoracion de PETALOS y GLOBOS.
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 h-[900px] md:h-[700px] gap-12 py-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 h-[1100px] md:h-[900px] gap-12 py-12">
               <div className="flex">
                 <div
 
@@ -102,15 +101,15 @@ export default function Home() {
                   }}
 
                 >
-                  <div className="bottom-3 md:bottom-6 absolute w-[40%] left-[50%] -translate-x-2/4">
+                  <div className="bottom-5 md:bottom-8 absolute w-[40%] left-[50%] -translate-x-2/4">
                     <a
                       href={whatsappLink("#1")}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="font-medium tracking-wide w-full py-1 md:py-2 px-5  sm:px-8 text-[#FFF]  outline-none rounded-md capitalize bg-[#8E4544] hover:bg-[#85403f] hover:text-white-500 transition-all hover:shadow-[#E5AAAD] text-xs md:text-sm">
+                      <Button className="font-medium tracking-wide w-full h-6 md:h-10  text-[#FFF]  outline-none rounded-md capitalize bg-[#8E4544] hover:bg-[#85403f] hover:text-white-500 transition-all hover:shadow-[#E5AAAD] text-xs md:text-sm">
                         Reserva
-                      </button>
+                      </Button>
                     </a>
                   </div>
                 </div>
@@ -129,15 +128,15 @@ export default function Home() {
                   }}
 
                 >
-                  <div className="bottom-4 md:bottom-7 absolute w-[40%] left-[50%] -translate-x-2/4">
+                  <div className="bottom-6 md:bottom-10 absolute w-[40%] left-[50%] -translate-x-2/4">
                     <a
                       href={whatsappLink("#2")}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="font-medium tracking-wide w-full py-1 md:py-2 px-5 sm:px-8 text-[#FFF] text-xs md:text-sm  outline-none rounded-md capitalize bg-[#8E4544] hover:bg-[#85403f] hover:text-white-500 transition-all hover:shadow-[#E5AAAD]">
+                      <Button className="font-medium tracking-wide w-full h-6 md:h-10 text-[#FFF] text-xs md:text-sm  outline-none rounded-md capitalize bg-[#8E4544] hover:bg-[#85403f] hover:text-white-500 transition-all hover:shadow-[#E5AAAD]">
                         Reserva
-                      </button>
+                      </Button>
                     </a>
                   </div>
                 </div>
